@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logged Out</title>
+  <link rel="stylesheet" href="../Layout/layout.css">
+</head>
+<style>
+  .logout-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    /* Increased from 2rem */
+    margin-top: 0;
+    /* Override margin-top: 20% from layout.css */
+  }
+
+  .logout-message p {
+    font-size: 1.5rem;
+    /* Larger font for the redirect message */
+  }
+</style>
+
+<body>
+  <div class="logout-message">
+    We've logged you out.
+    <p>Redirecting to the home page in <span id="countdown">3</span> seconds...</p>
+  </div>
+
+  <script>
+    let countdown = 3;
+    const countdownElement = document.getElementById('countdown');
+
+    const timer = setInterval(() => {
+      countdown--;
+      countdownElement.textContent = countdown;
+      if (countdown <= 0) {
+        clearInterval(timer);
+        window.location.href = 'principal.php'; // Redirect to home page
+      }
+    }, 1000);
+  </script>
+</body>
+
+</html>

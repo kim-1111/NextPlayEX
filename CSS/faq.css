@@ -1,0 +1,174 @@
+/* Importamos fuentes desde Google Fonts para consistencia */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap');
+
+/* ================= Estilos Generales ================= */
+body {
+  margin: 0;
+  margin-top: 50px; /* Espacio para navbar fijo */
+  font-family: 'Orbitron', sans-serif;
+  color: var(--main-color); /* Color cyan neon consistente */
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100dvh;
+  position: relative;
+}
+
+/* Canvas para partículas */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Contenedor principal */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 30px;
+  background: var(--content-bg); /* Fondo semitransparente de layout.css */
+  border: 2px solid var(--main-color); /* Borde cyan neon */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: var(--main-color); /* Cyan neon */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  text-shadow: 0 0 10px var(--main-color);
+  margin-bottom: 40px;
+  animation: pulse 2s infinite;
+}
+
+h1 i {
+  margin-right: 10px;
+}
+
+/* Animación de pulso para el título */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Sección FAQ */
+.faq {
+  margin: 20px 0;
+}
+
+/* Elemento individual de FAQ */
+.faq-item {
+  background: rgba(10, 10, 18, 0.9);
+  border: 2px solid var(--main-color);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Pregunta de FAQ (estilo botón) */
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--main-color);
+  background: linear-gradient(90deg, rgba(0, 247, 255, 0.1), rgba(0, 102, 255, 0.1));
+  border: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.faq-question i {
+  margin-right: 15px;
+  font-size: 1.3rem;
+}
+
+.faq-question:hover {
+  background: linear-gradient(90deg, rgba(0, 247, 255, 0.3), rgba(0, 102, 255, 0.3));
+  transform: translateX(5px);
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
+}
+
+/* Respuesta de FAQ */
+.faq-answer {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(10, 10, 18, 0.9);
+  border-top: 1px solid var(--main-color);
+  color: var(--main-color); /* Cyan neon para consistencia */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+}
+
+/* Estado activo para respuesta */
+.faq-answer.active {
+  padding: 15px;
+  max-height: 200px; /* Ajustado dinámicamente en JS */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+    margin: 60px auto;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .faq-question i {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .faq-question i {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,704 @@
+<VideoGameDatabase>
+    <Game>
+        <GameID>1</GameID>
+        <Title>The Last Quest</Title>
+        <Genre>Action-RPG</Genre>
+        <ReleaseDate>2023-11-15</ReleaseDate>
+        <Description>Embark on an epic fantasy adventure in a decaying world.</Description>
+    </Game>
+    <Game>
+        <GameID>2</GameID>
+        <Title>Cyber Revolution</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2024-03-22</ReleaseDate>
+        <Description>Fight in a dystopian cyberpunk city with nano-enhanced abilities.</Description>
+    </Game>
+    <Game>
+        <GameID>3</GameID>
+        <Title>Galactic Empires</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2022-09-10</ReleaseDate>
+        <Description>Build and conquer galaxies in this epic space strategy game.</Description>
+    </Game>
+    <Game>
+        <GameID>4</GameID>
+        <Title>Shadow of the Ancients</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2021-05-18</ReleaseDate>
+        <Description>Uncover the secrets of a lost civilization in this thrilling adventure.</Description>
+    </Game>
+    <Game>
+        <GameID>5</GameID>
+        <Title>Neon Drift</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2023-07-30</ReleaseDate>
+        <Description>Race through futuristic cities in high-speed neon-lit cars.</Description>
+    </Game>
+    <Game>
+        <GameID>6</GameID>
+        <Title>Dungeon Siege</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2020-12-01</ReleaseDate>
+        <Description>Explore dark dungeons and defeat powerful monsters.</Description>
+    </Game>
+    <Game>
+        <GameID>7</GameID>
+        <Title>Battlefront: Legends</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2024-01-12</ReleaseDate>
+        <Description>Join the battle in this action-packed war game.</Description>
+    </Game>
+    <Game>
+        <GameID>8</GameID>
+        <Title>Starlight Chronicles</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2023-04-05</ReleaseDate>
+        <Description>A story-driven RPG set in a magical universe.</Description>
+    </Game>
+    <Game>
+        <GameID>9</GameID>
+        <Title>Zombie Apocalypse</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2022-10-31</ReleaseDate>
+        <Description>Survive in a world overrun by zombies.</Description>
+    </Game>
+    <Game>
+        <GameID>10</GameID>
+        <Title>Skybound</Title>
+        <Genre>Simulation</Genre>
+        <ReleaseDate>2023-08-20</ReleaseDate>
+        <Description>Take to the skies in this realistic flight simulator.</Description>
+    </Game>
+    <Game>
+        <GameID>11</GameID>
+        <Title>Mystic Realms</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2021-07-14</ReleaseDate>
+        <Description>Explore magical realms and uncover hidden treasures.</Description>
+    </Game>
+    <Game>
+        <GameID>12</GameID>
+        <Title>Future Racers</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2024-06-18</ReleaseDate>
+        <Description>Compete in high-speed races in futuristic vehicles.</Description>
+    </Game>
+    <Game>
+        <GameID>13</GameID>
+        <Title>Warzone Commanders</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2023-02-28</ReleaseDate>
+        <Description>Lead your army to victory in this tactical war game.</Description>
+    </Game>
+    <Game>
+        <GameID>14</GameID>
+        <Title>Eternal Darkness</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2022-11-15</ReleaseDate>
+        <Description>Face your fears in this chilling horror adventure.</Description>
+    </Game>
+    <Game>
+        <GameID>15</GameID>
+        <Title>Space Explorers</Title>
+        <Genre>Simulation</Genre>
+        <ReleaseDate>2023-09-22</ReleaseDate>
+        <Description>Explore the vastness of space in this immersive simulator.</Description>
+    </Game>
+    <Game>
+        <GameID>16</GameID>
+        <Title>Kingdom of Heroes</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2024-05-10</ReleaseDate>
+        <Description>Build your kingdom and lead your heroes to glory.</Description>
+    </Game>
+    <Game>
+        <GameID>17</GameID>
+        <Title>Cyber Ninja</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2023-12-05</ReleaseDate>
+        <Description>Become a cyber-enhanced ninja in this fast-paced action game.</Description>
+    </Game>
+    <Game>
+        <GameID>18</GameID>
+        <Title>Lost Planet</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2022-08-19</ReleaseDate>
+        <Description>Discover the mysteries of a forgotten planet.</Description>
+    </Game>
+    <Game>
+        <GameID>19</GameID>
+        <Title>Street Rivals</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2024-04-30</ReleaseDate>
+        <Description>Compete in underground street races for fame and fortune.</Description>
+    </Game>
+    <Game>
+        <GameID>20</GameID>
+        <Title>Dragon's Legacy</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2023-10-12</ReleaseDate>
+        <Description>Embark on a quest to reclaim the dragon's lost legacy.</Description>
+    </Game>
+
+    <Game>
+        <GameID>21</GameID>
+        <Title>Ocean Depths</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2023-06-14</ReleaseDate>
+        <Description>Explore the mysteries of the deep ocean.</Description>
+    </Game>
+    <Game>
+        <GameID>22</GameID>
+        <Title>Robot Wars</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2024-07-19</ReleaseDate>
+        <Description>Fight in a world dominated by robots.</Description>
+    </Game>
+    <Game>
+        <GameID>23</GameID>
+        <Title>Cyber Strike</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2023-05-14</ReleaseDate>
+        <Description>Engage in tactical cyber warfare with advanced weaponry.</Description>
+    </Game>
+    <Game>
+        <GameID>24</GameID>
+        <Title>Shadow Warriors</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2022-12-03</ReleaseDate>
+        <Description>Master stealth combat in ancient Japanese settings.</Description>
+    </Game>
+    <Game>
+        <GameID>25</GameID>
+        <Title>Galactic Traders</Title>
+        <Genre>Simulation</Genre>
+        <ReleaseDate>2021-08-19</ReleaseDate>
+        <Description>Build a space trading empire across star systems.</Description>
+    </Game>
+    <Game>
+        <GameID>26</GameID>
+        <Title>War of Realms</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2024-02-11</ReleaseDate>
+        <Description>Command mythical armies in a battle for dominance.</Description>
+    </Game>
+    <Game>
+        <GameID>27</GameID>
+        <Title>Dragon's Fury</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2020-06-25</ReleaseDate>
+        <Description>Tame dragons and unleash their power in epic battles.</Description>
+    </Game>
+    <Game>
+        <GameID>28</GameID>
+        <Title>Neon Outlaws</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2023-09-08</ReleaseDate>
+        <Description>Outrun the law in neon-lit futuristic cities.</Description>
+    </Game>
+    <Game>
+        <GameID>29</GameID>
+        <Title>Lost Temple</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2021-03-17</ReleaseDate>
+        <Description>Solve ancient puzzles to uncover hidden treasures.</Description>
+    </Game>
+    <Game>
+        <GameID>30</GameID>
+        <Title>Space Marines</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2024-08-30</ReleaseDate>
+        <Description>Fight alien invasions in zero-gravity combat.</Description>
+    </Game>
+    <Game>
+        <GameID>31</GameID>
+        <Title>Cyber Heist</Title>
+        <Genre>Stealth</Genre>
+        <ReleaseDate>2024-09-15</ReleaseDate>
+        <Description>Hack and infiltrate corporate networks in a cyberpunk world.</Description>
+    </Game>
+    <Game>
+        <GameID>32</GameID>
+        <Title>Dragon's Requiem</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2024-10-20</ReleaseDate>
+        <Description>Embark on a legendary quest to tame the last dragon.</Description>
+    </Game>
+    <Game>
+        <GameID>33</GameID>
+        <Title>Mecha Wars</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2024-11-05</ReleaseDate>
+        <Description>Control giant mechs in strategic battles for planetary dominance.</Description>
+    </Game>
+    <Game>
+        <GameID>34</GameID>
+        <Title>Neon Rush</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2024-12-10</ReleaseDate>
+        <Description>High-speed futuristic racing with neon-lit streets.</Description>
+    </Game>
+    <Game>
+        <GameID>35</GameID>
+        <Title>Shadow Chronicles</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2025-01-08</ReleaseDate>
+        <Description>Survive a haunted mansion filled with supernatural horrors.</Description>
+    </Game>
+    <Game>
+        <GameID>36</GameID>
+        <Title>Final Stand</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2025-02-22</ReleaseDate>
+        <Description>Defend Earth from an overwhelming alien invasion.</Description>
+    </Game>
+    <Game>
+        <GameID>37</GameID>
+        <Title>Pixel Quest</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2025-03-15</ReleaseDate>
+        <Description>Explore pixel-art dungeons in a classic 2D adventure.</Description>
+    </Game>
+    <Game>
+        <GameID>38</GameID>
+        <Title>Skybound Kingdom</Title>
+        <Genre>Simulation</Genre>
+        <ReleaseDate>2025-04-10</ReleaseDate>
+        <Description>Build and manage a floating kingdom among the clouds.</Description>
+    </Game>
+    <Game>
+        <GameID>39</GameID>
+        <Title>Biohazard City</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2025-05-12</ReleaseDate>
+        <Description>Navigate a city overrun by bio-mutated horrors.</Description>
+    </Game>
+    <Game>
+        <GameID>40</GameID>
+        <Title>Time Fracture</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2025-06-20</ReleaseDate>
+        <Description>Fix anomalies across time and prevent a paradox apocalypse.</Description>
+    </Game>
+    <Game>
+        <GameID>41</GameID>
+        <Title>Underground Rebellion</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2025-07-15</ReleaseDate>
+        <Description>Lead a resistance against a dystopian underground regime.</Description>
+    </Game>
+    <Game>
+        <GameID>42</GameID>
+        <Title>Frozen Legacy</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2025-08-08</ReleaseDate>
+        <Description>Uncover the secrets of an ancient civilization buried in ice.</Description>
+    </Game>
+    <Game>
+        <GameID>43</GameID>
+        <Title>Crimson Vow</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2025-09-25</ReleaseDate>
+        <Description>Survive a cursed wedding night filled with terrifying apparitions.</Description>
+    </Game>
+    <Game>
+        <GameID>44</GameID>
+        <Title>Speed Freak</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2025-10-30</ReleaseDate>
+        <Description>Race against time in a chaotic world of illegal street racing.</Description>
+    </Game>
+    <Game>
+        <GameID>45</GameID>
+        <Title>Cyber Siege</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2025-11-12</ReleaseDate>
+        <Description>Defend your futuristic city against waves of cybernetic enemies.</Description>
+    </Game>
+    <Game>
+        <GameID>46</GameID>
+        <Title>Blood Pact</Title>
+        <Genre>Dark Fantasy</Genre>
+        <ReleaseDate>2025-12-05</ReleaseDate>
+        <Description>Form dangerous alliances in a world of dark magic and betrayal.</Description>
+    </Game>
+    <Game>
+        <GameID>47</GameID>
+        <Title>Exo Hunter</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2026-01-15</ReleaseDate>
+        <Description>Hunt down rogue androids in a futuristic dystopia.</Description>
+    </Game>
+    <Game>
+        <GameID>48</GameID>
+        <Title>Iron Frontier</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2026-02-20</ReleaseDate>
+        <Description>Build and defend colonies on a hostile alien world.</Description>
+    </Game>
+    <Game>
+        <GameID>49</GameID>
+        <Title>Wasteland Nomad</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2026-03-08</ReleaseDate>
+        <Description>Roam a post-apocalyptic wasteland in search of resources.</Description>
+    </Game>
+    <Game>
+        <GameID>50</GameID>
+        <Title>Neon Knights</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2026-04-05</ReleaseDate>
+        <Description>Fight crime in a neon-lit cyberpunk city.</Description>
+    </Game>
+    <Game>
+        <GameID>51</GameID>
+        <Title>Dark Omen</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2026-05-12</ReleaseDate>
+        <Description>Escape from a town cursed by an ancient evil.</Description>
+    </Game>
+    <Game>
+        <GameID>52</GameID>
+        <Title>Deep Space Echo</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2026-06-22</ReleaseDate>
+        <Description>Investigate a mysterious distress signal from a derelict spaceship.</Description>
+    </Game>
+    <Game>
+        <GameID>53</GameID>
+        <Title>Legends of Elysium</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2026-07-30</ReleaseDate>
+        <Description>Explore a vast fantasy world filled with ancient legends.</Description>
+    </Game>
+    <Game>
+        <GameID>54</GameID>
+        <Title>Steel Revenant</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2026-08-10</ReleaseDate>
+        <Description>Reclaim your humanity in a cyber-enhanced world.</Description>
+    </Game>
+    <Game>
+        <GameID>55</GameID>
+        <Title>Warborn</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2026-09-15</ReleaseDate>
+        <Description>Lead a squad of super soldiers into battle.</Description>
+    </Game>
+    <Game>
+        <GameID>56</GameID>
+        <Title>Echoes of the Abyss</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2026-10-05</ReleaseDate>
+        <Description>Face eldritch horrors from the depths of the ocean.</Description>
+    </Game>
+    <Game>
+        <GameID>57</GameID>
+        <Title>Starbound Tactics</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2026-11-20</ReleaseDate>
+        <Description>Command fleets in intergalactic warfare.</Description>
+    </Game>
+    <Game>
+        <GameID>58</GameID>
+        <Title>Blood Moon</Title>
+        <Genre>Dark Fantasy</Genre>
+        <ReleaseDate>2026-12-18</ReleaseDate>
+        <Description>Hunt werewolves under the cursed light of a blood moon.</Description>
+    </Game>
+    <Game>
+        <GameID>59</GameID>
+        <Title>Solar Exodus</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2027-01-10</ReleaseDate>
+        <Description>Lead humanity’s last hope to find a new home among the stars.</Description>
+    </Game>
+    <Game>
+        <GameID>60</GameID>
+        <Title>Frostbite</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2027-02-14</ReleaseDate>
+        <Description>Survive the frozen wilderness against all odds.</Description>
+    </Game>
+    <Game>
+        <GameID>61</GameID>
+        <Title>Phantom Protocol</Title>
+        <Genre>Stealth</Genre>
+        <ReleaseDate>2027-03-22</ReleaseDate>
+        <Description>Infiltrate enemy bases and uncover government conspiracies.</Description>
+    </Game>
+    <Game>
+        <GameID>62</GameID>
+        <Title>Celestial Rift</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2027-04-15</ReleaseDate>
+        <Description>Explore a fractured universe and battle cosmic entities.</Description>
+    </Game>
+    <Game>
+        <GameID>63</GameID>
+        <Title>Voidwalker</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2027-05-10</ReleaseDate>
+        <Description>Harness the power of darkness to defeat interdimensional foes.</Description>
+    </Game>
+    <Game>
+        <GameID>64</GameID>
+        <Title>Cyber Samurai</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2027-06-08</ReleaseDate>
+        <Description>Fight for honor in a futuristic Japan ruled by corporations.</Description>
+    </Game>
+    <Game>
+        <GameID>65</GameID>
+        <Title>Dead Zone</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2027-07-12</ReleaseDate>
+        <Description>Survive in a quarantine zone overrun by mutated creatures.</Description>
+    </Game>
+    <Game>
+        <GameID>66</GameID>
+        <Title>Neon Overdrive</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2027-08-18</ReleaseDate>
+        <Description>Compete in high-speed races across a cybernetic city.</Description>
+    </Game>
+    <Game>
+        <GameID>67</GameID>
+        <Title>Blood Ties</Title>
+        <Genre>Dark Fantasy</Genre>
+        <ReleaseDate>2027-09-25</ReleaseDate>
+        <Description>Unravel the dark history of your cursed lineage.</Description>
+    </Game>
+    <Game>
+        <GameID>68</GameID>
+        <Title>Star Crusade</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2027-10-30</ReleaseDate>
+        <Description>Lead a space-faring empire to glory in interstellar wars.</Description>
+    </Game>
+    <Game>
+        <GameID>69</GameID>
+        <Title>Feral Instinct</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2027-11-12</ReleaseDate>
+        <Description>Survive in the wild as a lone hunter against nature’s fury.</Description>
+    </Game>
+    <Game>
+        <GameID>70</GameID>
+        <Title>Eclipse</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2027-12-06</ReleaseDate>
+        <Description>Escape a doomed space station plagued by an unknown terror.</Description>
+    </Game>
+    <Game>
+        <GameID>71</GameID>
+        <Title>Infernal Descent</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2028-01-22</ReleaseDate>
+        <Description>Battle through the depths of hell to reclaim your soul.</Description>
+    </Game>
+    <Game>
+        <GameID>72</GameID>
+        <Title>Quantum Shift</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2028-02-14</ReleaseDate>
+        <Description>Master time and space to solve mind-bending puzzles.</Description>
+    </Game>
+    <Game>
+        <GameID>73</GameID>
+        <Title>Stormbreak</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2028-03-18</ReleaseDate>
+        <Description>Survive a mysterious island haunted by ancient legends.</Description>
+    </Game>
+    <Game>
+        <GameID>74</GameID>
+        <Title>Frostguard</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2028-04-10</ReleaseDate>
+        <Description>Defend a frozen kingdom from an eternal winter curse.</Description>
+    </Game>
+    <Game>
+        <GameID>75</GameID>
+        <Title>Mech Arena</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2028-05-08</ReleaseDate>
+        <Description>Engage in explosive battles with fully customizable mechs.</Description>
+    </Game>
+    <Game>
+        <GameID>76</GameID>
+        <Title>Requiem</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2028-06-20</ReleaseDate>
+        <Description>Unravel the sinister mysteries of a haunted cathedral.</Description>
+    </Game>
+    <Game>
+        <GameID>77</GameID>
+        <Title>Dark Frontier</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2028-07-14</ReleaseDate>
+        <Description>Colonize and defend a hostile alien world.</Description>
+    </Game>
+    <Game>
+        <GameID>78</GameID>
+        <Title>Neon Revolution</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2028-08-30</ReleaseDate>
+        <Description>Lead an uprising against a tyrannical cyber-regime.</Description>
+    </Game>
+    <Game>
+        <GameID>79</GameID>
+        <Title>Genesis War</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2028-09-10</ReleaseDate>
+        <Description>Wage war with genetically enhanced armies.</Description>
+    </Game>
+    <Game>
+        <GameID>80</GameID>
+        <Title>Shadow Veil</Title>
+        <Genre>Stealth</Genre>
+        <ReleaseDate>2028-10-25</ReleaseDate>
+        <Description>Master the art of deception in a city ruled by assassins.</Description>
+    </Game>
+    <Game>
+        <GameID>81</GameID>
+        <Title>Omega Circuit</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2028-11-30</ReleaseDate>
+        <Description>Compete in gravity-defying circuits across the galaxy.</Description>
+    </Game>
+    <Game>
+        <GameID>82</GameID>
+        <Title>Rise of the Forgotten</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2028-12-12</ReleaseDate>
+        <Description>Reclaim your kingdom from the clutches of darkness.</Description>
+    </Game>
+    <Game>
+        <GameID>83</GameID>
+        <Title>Blackout</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2029-01-22</ReleaseDate>
+        <Description>Navigate a post-apocalyptic world without electricity.</Description>
+    </Game>
+    <Game>
+        <GameID>84</GameID>
+        <Title>Warborn Legacy</Title>
+        <Genre>FPS</Genre>
+        <ReleaseDate>2029-02-15</ReleaseDate>
+        <Description>Fight alongside legendary warriors in a war-torn future.</Description>
+    </Game>
+    <Game>
+        <GameID>85</GameID>
+        <Title>Starborn</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2029-03-05</ReleaseDate>
+        <Description>Rise from an orphan to the leader of an intergalactic empire.</Description>
+    </Game>
+    <Game>
+        <GameID>86</GameID>
+        <Title>Lost Colony</Title>
+        <Genre>Survival</Genre>
+        <ReleaseDate>2029-04-18</ReleaseDate>
+        <Description>Rebuild a lost civilization in an uncharted land.</Description>
+    </Game>
+    <Game>
+        <GameID>87</GameID>
+        <Title>Bloodline</Title>
+        <Genre>Dark Fantasy</Genre>
+        <ReleaseDate>2029-05-30</ReleaseDate>
+        <Description>Embrace your destiny in a world ruled by vampires.</Description>
+    </Game>
+    <Game>
+        <GameID>88</GameID>
+        <Title>Death Circuit</Title>
+        <Genre>Racing</Genre>
+        <ReleaseDate>2029-06-22</ReleaseDate>
+        <Description>Participate in deadly races where only the fastest survive.</Description>
+    </Game>
+    <Game>
+        <GameID>89</GameID>
+        <Title>Sentinel</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2029-07-12</ReleaseDate>
+        <Description>Defend humanity from a robotic uprising.</Description>
+    </Game>
+    <Game>
+        <GameID>90</GameID>
+        <Title>Warp Drive</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2029-08-25</ReleaseDate>
+        <Description>Explore the edges of the universe with advanced technology.</Description>
+    </Game>
+    <Game>
+        <GameID>91</GameID>
+        <Title>Shadow Dominion</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2029-09-10</ReleaseDate>
+        <Description>Rise as the ruler of an ancient kingdom shrouded in darkness.</Description>
+    </Game>
+    <Game>
+        <GameID>92</GameID>
+        <Title>Exo Hunters</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2029-10-05</ReleaseDate>
+        <Description>Hunt alien creatures across uncharted planets.</Description>
+    </Game>
+    <Game>
+        <GameID>93</GameID>
+        <Title>Darkwave</Title>
+        <Genre>Horror</Genre>
+        <ReleaseDate>2029-11-20</ReleaseDate>
+        <Description>Survive in a city plagued by an ancient evil.</Description>
+    </Game>
+    <Game>
+        <GameID>94</GameID>
+        <Title>Mecha Wars</Title>
+        <Genre>Strategy</Genre>
+        <ReleaseDate>2029-12-15</ReleaseDate>
+        <Description>Command giant mechs in a war for planetary domination.</Description>
+    </Game>
+    <Game>
+        <GameID>95</GameID>
+        <Title>Echoes of the Abyss</Title>
+        <Genre>Dark Fantasy</Genre>
+        <ReleaseDate>2030-01-10</ReleaseDate>
+        <Description>Uncover the truth behind an ancient curse consuming the world.</Description>
+    </Game>
+    <Game>
+        <GameID>96</GameID>
+        <Title>Quantum Nexus</Title>
+        <Genre>Sci-Fi</Genre>
+        <ReleaseDate>2030-02-18</ReleaseDate>
+        <Description>Explore parallel dimensions in search of lost knowledge.</Description>
+    </Game>
+    <Game>
+        <GameID>97</GameID>
+        <Title>Hellbound</Title>
+        <Genre>Action</Genre>
+        <ReleaseDate>2030-03-25</ReleaseDate>
+        <Description>Escape from the underworld and seek vengeance.</Description>
+    </Game>
+    <Game>
+        <GameID>98</GameID>
+        <Title>Neon Samurai</Title>
+        <Genre>RPG</Genre>
+        <ReleaseDate>2030-04-12</ReleaseDate>
+        <Description>Battle cybernetic warlords in a dystopian future.</Description>
+    </Game>
+    <Game>
+        <GameID>99</GameID>
+        <Title>Oblivion Protocol</Title>
+        <Genre>Stealth</Genre>
+        <ReleaseDate>2030-05-30</ReleaseDate>
+        <Description>Erase your existence from a totalitarian supercomputer.</Description>
+    </Game>
+    <Game>
+        <GameID>100</GameID>
+        <Title>Chrono Break</Title>
+        <Genre>Adventure</Genre>
+        <ReleaseDate>2030-06-22</ReleaseDate>
+        <Description>Manipulate time to fix a broken reality.</Description>
+    </Game>
+
+</VideoGameDatabase>

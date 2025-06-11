@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="principal">
+    <button onclick="mostrarLogin()">Abrir Login</button>
+  </div>
+
+  <div id="login">
+    <div id="login-content">
+      <p>Formulario de login</p>
+      <button onclick="cerrarLogin()">Cerrar</button>
+    </div>
+  </div>
+
+
+  <style>
+    #principal {
+      width: 100%;
+      height: 100vh;
+      background-color: white;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    #login {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Fondo oscuro semitransparente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #login-content {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+
+  <script>function mostrarLogin() {
+      document.getElementById("login").style.display = "flex";
+      document.getElementById("principal").style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+    }
+
+    function cerrarLogin() {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("principal").style.backgroundColor = "white";
+    }</script>
+
+</body>
+
+</html>

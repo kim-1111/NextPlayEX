@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextPlay</title>
+  <!-- Ícono de la página -->
+  <link rel="icon" href="../imagenes/logo.png">
+  <!-- Archivos CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Fuentes personalizadas -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- LAYOUT -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../Layout/include.js"></script>
+  <script src="../Layout/auth.js"></script>
+  <link rel="stylesheet" href="../CSS/auth.css">
+  <link rel="stylesheet" href="../Layout/layout.css">
+  <link rel="stylesheet" href="../CSS/faq.css">
+  <link rel="stylesheet" href="../CSS/principal.css">
+</head>
+
+<body>
+    <!-- Cabecera con navbar -->
+    <header>
+      <div id="navbar"></div>
+      <div id="overlay"></div>
+      <div id="loginwindow"></div>
+      <div id="registerwindow"></div>
+    </header>
+    <main>
+  <!-- Canvas para partículas de fondo -->
+  <canvas id="particle-canvas"></canvas>
+  
+    <div class="container">
+      <br>
+      <h1><i class="fas fa-gamepad"></i> NextPlay FAQ</h1>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-question-circle"></i> What's the video game event
+            about?</button>
+          <div class="faq-answer">
+            <p>Get ready for the ultimate gaming bash! Expect epic tournaments, insider dev panels, cosplay battles, and
+              exclusive game demos that’ll leave you speechless.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-ticket-alt"></i> How do I get tickets?</button>
+          <div class="faq-answer">
+            <p>Secure your spot online via our website or grab tickets at the venue on the day—if they’re still up for
+              grabs!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-user"></i> Is there an age limit?</button>
+          <div class="faq-answer">
+            <p>All ages welcome! Under-16s need an adult buddy. Some areas may have age restrictions, so check the
+              deets.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-trophy"></i> Can I join tournaments?</button>
+          <div class="faq-answer">
+            <p>Absolutely! Register online or at the event to compete. Spots are limited, so don’t wait!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-utensils"></i> Food and drinks available?</button>
+          <div class="faq-answer">
+            <p>Plenty of grub and drinks, including vegan and veggie options. No outside food allowed, though!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-keyboard"></i> Can I bring my own setup?</button>
+          <div class="faq-answer">
+            <p>We provide killer setups for most tournaments. Want to use your own gear? Contact us first.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-mask"></i> Is cosplay allowed?</button>
+          <div class="faq-answer">
+            <p>You bet! Cosplay is encouraged, with a contest to strut your stuff. Follow our safety guidelines.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-shopping-bag"></i> Will there be merch?</button>
+          <div class="faq-answer">
+            <p>Score exclusive event swag, collectibles, and apparel. Bring cash—some vendors are card-free!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-money-bill-wave"></i> Can I refund my ticket?</button>
+          <div class="faq-answer">
+            <p>No refunds, but you can transfer your ticket to someone else. Hit up our support team for help.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><i class="fas fa-parking"></i> Is parking available?</button>
+          <div class="faq-answer">
+            <p>Paid parking’s on-site, but spaces are limited. Carpool or use public transit for a smoother ride.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Pie de página -->
+  <footer>
+    <div id="footer"></div>
+  </footer>
+  <script>
+    // FAQ Toggle and Typewriter Effect
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isActive = answer.classList.contains('active');
+        // Close all other answers
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+          ans.classList.remove('active');
+          ans.style.maxHeight = null;
+          ans.querySelector('p').innerHTML = ans.querySelector('p').dataset.text || ans.querySelector('p').textContent;
+        });
+        // Toggle the clicked answer
+        if (!isActive) {
+          answer.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          typeWriter(answer.querySelector('p'));
+        }
+      });
+    });
+
+    // Typewriter Effect
+    function typeWriter(element) {
+      const text = element.dataset.text || element.textContent;
+      element.dataset.text = text;
+      element.textContent = '';
+      let i = 0;
+      const speed = 30; // Milliseconds per character
+      function type() {
+        if (i < text.length) {
+          element.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+
+    // Particle Background Animation
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particlesArray = [];
+    const numberOfParticles = 100;
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 5 + 1;
+        this.speedX = Math.random() * 3 - 1.5;
+        this.speedY = Math.random() * 3 - 1.5;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.size > 0.2) this.size -= 0.1;
+      }
+      draw() {
+        ctx.fillStyle = 'rgba(0, 247, 255, 0.8)';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function init() {
+      for (let i = 0; i < numberOfParticles; i++) {
+        particlesArray.push(new Particle());
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+        if (particlesArray[i].size <= 0.2) {
+          particlesArray.splice(i, 1);
+          i--;
+          particlesArray.push(new Particle());
+        }
+      }
+      requestAnimationFrame(animate);
+    }
+
+    init();
+    animate();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+.news-hero-section {
+  background: var(--darker-bg);
+  padding: 60px 0;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.news-hero-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.news-hero-text .neon-title {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--main-color);
+}
+
+.info-text {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.news-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.news-slide {
+  display: none;
+  position: relative;
+}
+
+.news-slide.active {
+  display: block;
+}
+
+.news-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.news-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(10, 10, 42, 0.85);
+  padding: 20px;
+  color: white;
+  border-radius: 0 0 12px 12px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--button-gradient);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.news-cards-section .news-card {
+  background: var(--card-gradient);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-cards-section .news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+}
+
+.news-cards-section .card-body {
+  padding: 20px;
+}
+
+.news-cards-section .card-title {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.news-cards-section .card-text {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.read-btn {
+  background: var(--button-gradient);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.read-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.badge-breaking { background-color: #ff4444; color: white; }
+.badge-featured { background-color: #00f7ff; color: black; }
+.badge-new { background-color: #ffcc00; color: black; }
+.badge-trending { background-color: #ff00dd; color: white; }

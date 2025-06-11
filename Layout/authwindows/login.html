@@ -1,0 +1,38 @@
+<section class="login-wrapper">
+  <div class="login-content">
+    <section class="login-container">
+      <div class="closebutton"><button onclick="cerrarLogin()">X</button></div>
+      <h2 class="title">Login</h2>
+      <form action="../php/controllerpdo.php" method="post">
+        <label>
+          <div class="input-container">
+            <img src="../imagenes/user-icon.png" alt="User Icon">
+          </div>
+          <input type="text" required placeholder="Enter username" name="username">
+        </label>
+        <label>
+          <div class="input-container">
+            <img src="../imagenes/password-icon.png" alt="Password Icon">
+          </div>
+          <input type="password" required placeholder="Enter your password" name="password">
+        </label>
+
+        <div class="box1">
+          <div class="rememberpassword">
+            <label for="remember">
+              <input type="checkbox" id="remember"> Remember me
+            </label>
+          </div>
+          <div class="forgotpassword">
+            <a href="" class="wowow">Forgot password?</a>
+          </div>
+        </div>
+
+        <button class="login-btn" type="submit" name="login">Login</button>
+      </form>
+      <div class="authswitch">
+        <p><a onclick="cerrarLogin(), mostrarRegister()">Don't have an account? Register!</a></p>
+      </div>
+    </section>
+  </div>
+</section>

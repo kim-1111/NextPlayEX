@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register Flotante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* Botones de abrir */
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background: blue;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Fondo oscuro */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      /* Oculto por defecto */
+      z-index: 9;
+    }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      width: 300px;
+      display: none;
+      z-index: 10;
+      /* Encima del fondo oscuro */
+    }
+
+    .close {
+      background: red;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    /* Mostrar el modal cuando el ID es el objetivo */
+    #login:target,
+    #register:target {
+      display: block;
+    }
+
+    #login:target~.overlay,
+    #register:target~.overlay {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Bienvenido</h1>
+  <a href="#login" class="btn">Iniciar sesión</a>
+  <a href="#register" class="btn">Registrarse</a>
+
+  <!-- Fondo Oscuro -->
+  <div class="overlay"></div>
+
+  <!-- Modal de Login -->
+  <div id="login" class="modal">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Usuario" required><br><br>
+      <input type="password" placeholder="Contraseña" required><br><br>
+      <button type="submit">Ingresar</button>
+    </form>
+    <a href="#" class="close">Cerrar</a>
+  </div>
+
+  <!-- Modal de Registro -->
+  <div id="register" class="modal">
+    <h2>Registro</h2>
+    <form>
+      <input type="text" placeholder="Usuario" required><br><br>
+      <input type="email" placeholder="Correo" required><br><br>
+      <input type="password" placeholder="Contraseña" required><br><br>
+      <button type="submit">Registrarse</button>
+    </form>
+    <a href="#" class="close">Cerrar</a>
+  </div>
+
+</body>
+
+</html>

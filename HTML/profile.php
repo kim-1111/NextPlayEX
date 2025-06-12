@@ -145,7 +145,7 @@ $juegosInteresados = $controller->getUserInterestedGames();
 
                   <?php
                   foreach ($juegosInteresados as $juego):
-                    ?>
+                  ?>
                     <div class="col-lg-4 col-md-6 mb-3">
                       <div class="friend-card">
                         <div class="friend-info">
@@ -214,20 +214,19 @@ $juegosInteresados = $controller->getUserInterestedGames();
                             value="<?php echo $_SESSION['user']['email']; ?>">
                         </div>
                       </div>
-                    </div>
 
-                    <!--<div class="row">
                       <div class="col-md-6 mb-3">
                         <div class="form-group">
-                          <label for="teléfono" class="form-label">
+                          <label for="phone" class="form-label">
                             <i class="fas fa-phone"></i> Phone
                           </label>
-                          <input type="text" class="form-control" name="teléfono" id="teléfono"
-                            placeholder="Enter phone number">
+                          <input type="text" class="form-control" name="phone" id="phone"
+                            value="<?php echo $_SESSION['user']['phone']; ?>">
                         </div>
                       </div>
+                    </div>
 
-                      <div class="col-md-6 mb-3">
+                    <!--  <div class="col-md-6 mb-3">
                         <div class="form-group">
                           <label for="birthdate" class="form-label">
                             <i class="fas fa-birthday-cake"></i> Birthday
@@ -487,7 +486,7 @@ $juegosInteresados = $controller->getUserInterestedGames();
 
   <!-- Avatar Upload Script -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       const profileImage = document.getElementById('profile-image');
       const avatarOverlay = document.querySelector('.avatar-overlay');
       const fileInput = document.getElementById('file-upload');
@@ -503,11 +502,11 @@ $juegosInteresados = $controller->getUserInterestedGames();
       });
 
       // Preview and submit selected image
-      window.previewAndSubmit = function (event) {
+      window.previewAndSubmit = function(event) {
         const file = event.target.files[0];
         if (file) {
           const reader = new FileReader();
-          reader.onload = function (e) {
+          reader.onload = function(e) {
             profileImage.src = e.target.result; // Update avatar preview
           };
           reader.readAsDataURL(file);
@@ -523,7 +522,7 @@ $juegosInteresados = $controller->getUserInterestedGames();
             data: formData,
             contentType: false,
             processData: false,
-            success: function (response) {
+            success: function(response) {
               try {
                 const data = JSON.parse(response);
                 if (data.status === "success") {

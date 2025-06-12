@@ -55,8 +55,8 @@ class EventController
   private $conn;
   function __construct()
   {
-    $servername = "nextplay-nextplay.l.aivencloud.com:11948";
-    $username = "avnadmin";
+    $servername = "127.0.0.1:3306";
+    $username = "root";
     $password = "";
     $dbname = "nextplay";
 

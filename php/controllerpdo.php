@@ -28,8 +28,8 @@ class UserController
   private $conn;
   function __construct()
   {
-    $servername = "nextplay-nextplay.l.aivencloud.com:11948";
-    $username = "avnadmin";
+    $servername = "127.0.0.1:3306";
+    $username = "root";
     $password = "";
     $dbname = "nextplay";
 
@@ -48,7 +48,7 @@ class UserController
 
     try {
       // Login for usuarios
-      $stmt = $this->conn->prepare("SELECT id_usuario, nombre, correo, contrasena, estadisticas, img FROM usuarios WHERE nombre = :username");
+      $stmt = $this->conn->prepare("SELECT id_usuario, nombre, phone, correo, contrasena, estadisticas, img FROM usuarios WHERE nombre = :username");
       $stmt->execute(['username' => $username]);
       $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -57,6 +57,7 @@ class UserController
         $_SESSION['user'] = [
           "id_usuario" => $user['id_usuario'],
           "nombre" => $user['nombre'],
+          "phone" => $user['phone'],
           "email" => $user['correo'],
           "estadisticas" => $user['estadisticas'],
           "img" => $user['img'],
@@ -71,7 +72,7 @@ class UserController
       }
 
       // Login for promotores
-      $stmt = $this->conn->prepare("SELECT id_promotor, nombre, correo, contrasena, contacto FROM promotores WHERE nombre = :username");
+      $stmt = $this->conn->prepare("SELECT id_promotor, nombre, phone, correo, contrasena, contacto FROM promotores WHERE nombre = :username");
       $stmt->execute(['username' => $username]);
       $promotor = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -80,6 +81,7 @@ class UserController
         $_SESSION['user'] = [
           "id_usuario" => $promotor['id_promotor'],
           "nombre" => $promotor['nombre'],
+          "phone" => $user['phone'],
           "email" => $promotor['correo'],
           "contacto" => $promotor['contacto'],
           "promotor" => true
@@ -113,13 +115,28 @@ class UserController
     }
   }
 
+
   public function register()
   {
     // Retrieve form data from POST request
     $username = $_POST['username'];
+    $phone = $_POST['phone'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $repeat_password = $_POST['repeat_password'];
+
+
+    if (empty(trim($phone))) {
+      $_SESSION['error'] = "El campo de telefono es obligatorio.";
+      header("Location: ../HTML/register.php");
+      exit();
+    }
+
+    if (!preg_match("/^\d{11}$/", $phone)) {
+      $_SESSION['error'] = "Formato telefono incorrecto";
+      header("Location: ../HTML/register.php");
+      exit();
+    }
 
     // Verifica que las contraseñas coincidan
     if ($password !== $repeat_password) {
@@ -145,6 +162,7 @@ class UserController
     $rol = $_POST['rol'];
     // Datos sanitizados y hash de la contraseña
     $username = htmlspecialchars($username, ENT_QUOTES, 'UTF-8');
+    $phone = htmlspecialchars($phone, ENT_QUOTES, 'UTF-8');
     $email = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
@@ -161,9 +179,10 @@ class UserController
 
     try {
       // Inserción en la base de datos
-      $stmt = $this->conn->prepare("INSERT INTO $tabla (nombre, correo, contrasena) VALUES (:username, :email, :password)");
+      $stmt = $this->conn->prepare("INSERT INTO $tabla (nombre, phone, correo, contrasena) VALUES (:username, :phone, :email, :password)");
       $stmt->execute([
         'username' => $username,
+        'phone' => $phone,
         'email' => $email,
         'password' => $hashed_password
       ]);
@@ -176,6 +195,7 @@ class UserController
       $_SESSION['user'] = [
         "id_usuario" => $id_usuario,
         "nombre" => $username,
+        'phone' => $phone,
         "email" => $email,
         "estadisticas" => [],
         "img" => null,
